@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211019 15:56:22.628" rpa="false" schemaversion="2">
+<suite id="s1" name="TestSitePratice" source="C:\Users\graci\OneDrive\Documentos\UDEMY\Robot\SuiteSiteTestePratice\tests\TestSitePratice.robot">
+<test id="s1-t1" name="Caso de Teste 01: Pesquisar produto existente">
+<kw name="Abrir navegador" library="Resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211019 15:56:22.874" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20211019 15:56:22.873" endtime="20211019 15:56:24.089"/>
+</kw>
+<status status="PASS" starttime="20211019 15:56:22.873" endtime="20211019 15:56:24.090"/>
+</kw>
+<kw name="Acessar a pagina home do site" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://automationpractice.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20211019 15:56:24.091" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20211019 15:56:24.090" endtime="20211019 15:56:40.920"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>My Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20211019 15:56:40.926" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20211019 15:56:40.920" endtime="20211019 15:56:40.927"/>
+</kw>
+<status status="PASS" starttime="20211019 15:56:24.090" endtime="20211019 15:56:40.927"/>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211019 15:56:40.928" endtime="20211019 15:56:43.106"/>
+</kw>
+<status status="PASS" starttime="20211019 15:56:40.928" endtime="20211019 15:56:43.106"/>
+</kw>
+<status status="PASS" starttime="20211019 15:56:22.869" endtime="20211019 15:56:43.106"/>
+</test>
+<status status="PASS" starttime="20211019 15:56:22.628" endtime="20211019 15:56:43.115"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSitePratice">TestSitePratice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

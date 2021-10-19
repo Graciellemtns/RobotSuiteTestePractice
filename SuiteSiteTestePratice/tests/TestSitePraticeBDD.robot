@@ -1,6 +1,12 @@
 ***Settings***
 Library   Selenium
 
+Test SETUP        Abrir navegador
+Test TEARDOWN     Fechar navegador
+
+### SETUP ele roda keyword antes da suite ou de um Teste
+### TEARDOWN ele roda keyword depois de um suite ou de um teste
+
 ***Variables***
 ${URL}           http://automationpractice.com/index.php
 ${BROWSER}       chrome

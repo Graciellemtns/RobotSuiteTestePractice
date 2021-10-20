@@ -29,8 +29,8 @@ Clicar no botão Pesquisar
     Click Element    name=submit_search
 
 Conferir se o produto "${PRODUTO}" foi listado no site
-#Esperar a pagina carregar
-    Wait Until Element Is Visible    xpath=//*[@id="center_column"]/h1/span[1]
+#Esperar a pagina carregar WAIT
+    Wait Until Element Is Visible    css=#center_column > h1
     Title Should Be                  Search - My Store
-    Page Should Contain Image        //*[@id="center_column"]/ul/li/div/div[1]/div/a[1]/img
-  
+    Page Should Contain Image        xpath=//*[@src="http://automationpractice.com/img/p/7/7-home_default.jpg"]
+    Page Should Contain Link         xpath=//*[@id="center_column"]//a[@class="product-name"][contains(text(),"${PRODUTO}")]

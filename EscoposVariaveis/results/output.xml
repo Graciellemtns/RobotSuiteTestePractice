@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211105 16:29:57.653" rpa="false" schemaversion="2">
+<suite id="s1" name="ExemplosTiposVariaveis" source="C:\Users\graci\OneDrive\Documentos\UDEMY\Robot\EscoposVariaveis\ExemplosTiposVariaveis.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01">
+<kw name="Uma keyword qualquer 01">
+<kw name="Log" library="BuiltIn">
+<arg>${GLOBAL_SIMPLES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211105 16:29:57.738" level="INFO">Vamos ver os tipos de variaveis no robot</msg>
+<status status="PASS" starttime="20211105 16:29:57.738" endtime="20211105 16:29:57.738"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Tem que ser maça: ${FRUTA[2]} e Essa tem que ser morango: ${FRUTA[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211105 16:29:57.742" level="INFO">Tem que ser maça: maça e Essa tem que ser morango: morango</msg>
+<status status="PASS" starttime="20211105 16:29:57.738" endtime="20211105 16:29:57.742"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Nome: ${Pessoa.nome} e email: ${PESSOA.email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211105 16:29:57.745" level="INFO">Nome: May Fernandes e email: timaochato@naoparadechorar</msg>
+<status status="PASS" starttime="20211105 16:29:57.742" endtime="20211105 16:29:57.745"/>
+</kw>
+<status status="PASS" starttime="20211105 16:29:57.737" endtime="20211105 16:29:57.746"/>
+</kw>
+<status status="PASS" starttime="20211105 16:29:57.736" endtime="20211105 16:29:57.747"/>
+</test>
+<doc>Exemplo de tipos de variaveis: SIMPLES, LISTAS e DICIONARIOS</doc>
+<status status="PASS" starttime="20211105 16:29:57.656" endtime="20211105 16:29:57.751"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ExemplosTiposVariaveis">ExemplosTiposVariaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -10,8 +10,9 @@ ${GLOBAL_SIMPLES}       Vamos ver os tipos de variaveis no robot
 #Tipo LISTAS
 @{FRUTA}               morango    banana    maça    uva    abacaxi
 
-#Tipo DICIONARIO
+#Tipo DICIONARIO é um conjunto de dados
 &{PESSOA}             nome=May Fernandes    email=timaochato@naoparadechorar      idade=7     sexo=timaochato
+
 
 *** Test Cases ***
 Caso de teste de exemplo 01
